@@ -1,0 +1,313 @@
+/* ============== UNISVERSAL STYLES =================== */
+body {
+    background-image: url("../img/bg.png");
+    width:100%;
+    margin:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:#fff;
+}
+
+a {
+    text-decoration:none;
+}
+
+
+/*--------------------------------------------------------------
+# Contacts
+--------------------------------------------------------------*/
+input, textarea {
+    background-image:url("../img/bg.png");
+    float:left;
+    border:0;
+    color:slategray;
+    font-size:14px;
+}
+
+input {
+    margin:10px;
+    padding:20px;
+    width:220px;
+    height:20px;
+    font-size:inherit;
+}
+
+textarea {
+    width:400px;
+    padding:10px;
+    margin:5px;
+}
+
+button {
+    background-color:rgba(255, 255, 255, 0.1);
+    color:#fff;
+    padding:10px;
+    border:0;
+    font-size:16px;
+    margin:10px;
+}
+
+button:hover {
+    background-color:#fff;
+    color:purple;
+}
+
+.inside-row a {
+    color:slategray;
+    font-size:18px;
+}
+
+.inside-row a:hover {
+    color:purple;
+}
+
+.inside-row a, .inside-row i, .inside-row p {
+    float:left;
+}
+
+.inside-row p, .inside-row {
+    width:100%;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+p, li {
+    color: slategrey;
+}
+
+li {
+    list-style:none;
+    text-align:left;
+    padding:6px;
+}
+
+/*--------------------------------------------------------------
+# Everything Else Inside The Slides
+--------------------------------------------------------------*/
+.slideshow-container {
+    Border:0; 
+    width:90%;
+    height:600px;
+    margin:15px auto;
+    transition:0.9s ease;
+}
+
+.mySlides h1 { 
+    font-size:40px;
+    font-weight:700;
+    margin:30px auto;
+    padding-top:15px;
+}
+
+#welcome-mssg, .mySlides h1 {
+    text-align:center;
+    margin:30px auto;
+    width:80%;
+}
+
+.mySlides .p {
+    float:left;
+    width:35%;
+    font-size:18px;
+    padding:8px;
+    left:0%;
+}
+
+.mySlides .p, .my-boxes, .my-boxes #p {
+    position: relative
+}
+
+.mySlides .large-box {
+    width:80%;
+    height:200px;
+    margin:15px auto;
+    margin-top:0;
+}
+
+.mySlides .large-box .square {
+    background-color:purple;
+    width:125px;
+    height:120px;
+    margin:10px;
+    float:left;
+}
+
+.my-boxes #p {
+    left:3%;
+}
+
+.my-boxes {
+    width:100%;
+    left:12%;
+}
+
+.mySlides .my-box {
+    color:#fff;
+    width:35%;
+    float:left;
+    text-align: center;
+    height:180px;
+    margin:10px;
+}
+
+.mySlides .my-box img {
+    width:80%;
+    margin:10px auto;
+}
+
+/*--------------------------------------------------------------
+# Social Media Icons /Links
+--------------------------------------------------------------*/
+.social-links {
+    margin-top:5px;
+    display: flex;
+    float:right;
+    margin-right:60px;
+}
+  
+.social-links a, .inside-row i {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    line-height: 1;
+    margin-right: 8px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-decoration:none;
+  }
+  
+.social-links a:hover {
+    background:purple;
+  }
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+.progress {
+    height: 50px;
+    width: 30%;
+    background: none;
+    margin:10px auto;
+    float: left;
+    padding:10px;
+  }
+  
+.progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: slategrey;
+  }
+  
+.progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+
+.progress-bar-wrap {
+    background: rgba(255, 255, 255, 0.15);
+}
+  
+.progress-bar {
+    width: 45px;
+    height: 12px;
+    transition: .9s;
+    background-color:purple;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+    width:100%;
+    height:30px;
+    color:#fff;
+    float:left;
+    margin-top:20px;
+    background-color:purple;
+    padding-top:6px;
+    padding-bottom:20px;
+    text-align:center;
+}
+
+footer p, footer a {
+    color:#fff;
+}
+
+/* ============== END OF UNISVERSAL STYLES =================== */
+
+/* ============== SMALL DEVICES =================== */
+@media screen and (max-width:640px) {
+
+        .slideshow-container {
+            height:auto;
+        }
+
+        .mySlides .my-box, .mySlides .p, .my-boxes #p, .slideshow-container {
+            margin:0;
+        }
+
+        .slideshow-container, .progress, .mySlides .p, .my-boxes #p, .mySlides .my-box, .mySlides .large-box .square {
+            width:100%;
+        }
+
+        .social-links {
+            padding-bottom:30px;
+            padding-left:10px;
+            text-align:center;
+        }
+
+        .numbertext {
+            padding-top:30px;
+            text-align:center;
+        }
+
+        .my-boxes, #my-boxes #p {
+            left:0;
+            width:90%;
+            margin:4px auto;
+            position: relative;
+            top:3%;
+        }
+
+        .mySlides .p, .my-boxes #p, .mySlides .my-box {
+            text-align:center;
+        }
+
+        .mySlides .my-box {
+            height:180px;
+            padding-top:10px;
+        }
+
+        .prev, .next {
+            top:4%;
+        }
+
+        #dots {
+            margin-top:20px;
+        }
+
+        input, textarea {
+            width:80%;
+        }
+
+        button, .mySlides .my-box, .mySlides .p, .my-boxes #p  {
+            float:left;
+        }
+
+        footer {
+            margin-top:60px;
+        }
+}
+/* ============== END OF SMALL DEVICES =================== */
