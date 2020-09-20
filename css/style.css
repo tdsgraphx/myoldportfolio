@@ -14,7 +14,6 @@ a {
     text-decoration:none;
 }
 
-
 /*--------------------------------------------------------------
 # Contacts
 --------------------------------------------------------------*/
@@ -128,12 +127,27 @@ li {
     margin-top:0;
 }
 
+.mySlides .large-box .logos {
+    width:22%;
+    margin:8px;
+   
+}
+
 .mySlides .large-box .square {
     background-color:purple;
     width:125px;
     height:120px;
     margin:10px;
     float:left;
+}
+
+.square img, .my-boxes .my-box img {
+    border:2px solid purple;
+}
+
+.square img:hover, .my-boxes .my-box img:hover {
+    opacity:.6;
+    border:2px solid #fff;
 }
 
 .my-boxes #p {
@@ -220,10 +234,33 @@ li {
 }
   
 .progress-bar {
-    width: 45px;
     height: 12px;
     transition: .9s;
     background-color:purple;
+}
+
+.progress #skill-a {
+    width:82%;
+}
+
+.progress #skill-b {
+    width:55%;
+}
+
+.progress #skill-c {
+    width:88%;
+}
+
+.progress #skill-d {
+    width:50%;
+}
+
+.progress #skill-e {
+    width:64%;
+}
+
+.progress #skill-f {
+    width:79%;
 }
 
 /*--------------------------------------------------------------
@@ -235,7 +272,8 @@ footer {
     color:#fff;
     float:left;
     margin-top:20px;
-    background-color:purple;
+    margin-bottom:50px;
+    /* background-color:purple; */
     padding-top:6px;
     padding-bottom:20px;
     text-align:center;
@@ -273,6 +311,12 @@ footer p, footer a {
             text-align:center;
         }
 
+        .square {
+            width:30px;
+            margin-top:400px;
+            float: left;
+        }
+
         .my-boxes, #my-boxes #p {
             left:0;
             width:90%;
@@ -287,7 +331,8 @@ footer p, footer a {
 
         .mySlides .my-box {
             height:180px;
-            padding-top:10px;
+            
+            margin-top:40px;
         }
 
         .prev, .next {
@@ -295,7 +340,7 @@ footer p, footer a {
         }
 
         #dots {
-            margin-top:20px;
+            bottom:0;
         }
 
         input, textarea {
@@ -307,7 +352,7 @@ footer p, footer a {
         }
 
         footer {
-            margin-top:60px;
+            margin-top:100px;
         }
 }
 /* ============== END OF SMALL DEVICES =================== */
