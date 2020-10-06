@@ -296,8 +296,15 @@ footer p, footer a {
             margin:0;
         }
 
-        .slideshow-container, .progress, .mySlides .p, .my-boxes #p, .mySlides .my-box, .mySlides .large-box .square {
+        .slideshow-container, .progress, .mySlides .p, .my-boxes #p, .mySlides .my-box {
             width:100%;
+        }
+        .mySlides .large-box .square {
+            width:40%;
+            float:left;
+            margin:10px;
+            margin-top:5px;
+            margin-bottom:5px;
         }
 
         .social-links {
@@ -331,8 +338,13 @@ footer p, footer a {
 
         .mySlides .my-box {
             height:180px;
-            
             margin-top:40px;
+        }
+
+        .mySlides .large-box .logos {
+            width:40%;
+            margin:4px;
+           
         }
 
         .prev, .next {
