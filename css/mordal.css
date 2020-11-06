@@ -6,6 +6,7 @@
 
 /* The Modal (background) */
 .modal {
+    margin: auto;;
     display: none; 
     position: fixed; 
     z-index: 1; 
@@ -15,6 +16,7 @@
     height: 100%; 
     overflow: auto;
     background-color:#fff;
+    z-index: 12;
 }
 
 /* Modal Content/Box */

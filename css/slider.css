@@ -1,148 +1,38 @@
-﻿
-
-/* On smaller screens, where width is less than 450px 
-@media screen and (max-width:700px) {
-
-/* Slideshow container 
-.slideshow-container {
-  width:100%;
-  float:left;
-  height:800px;
-  Border:2px solid #007FFC; 
-  border-left:none;
-  border-right:none;
-  margin-top:6px;
-  background-color:#FFFFFF;
-}
-
-/* Hide the images by default 
+﻿/* Hide the images by default */
 .mySlides  {
+    position: relative;
     display:none;
-    height:280px;
-    width:100%;  
-}
-
-.mySlides img {
-    width:100%;
-    height:250px;
-}
-
-/* Next & previous buttons 
- .prev, .next {
-  position:absolute;
-  top:20%;
-  width:auto;
-  padding:16px; 
-  color:#007FFC;
-  font-weight:600;
-  font-size:18px;
-  transition:0.6s ease;
-  border-radius:0 3px 3px 0;
-  user-select:none;
-  display:inline-block;
-}
-
-/* Position the "next button" to the right 
-.next {
-  right:0;
-  border-radius:3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text 
-.text {
-  color:#007FFC;
-  font-size:18px;
-  font-weight:600;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/6 etc) 
-.numbertext {
-  color:#007FFC;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-  display: none;
-}
-
-#dots {
-     text-align:center;   
-    }
-/* The dots/bullets/indicators 
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin:8px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display:inline-block;
-  transition:0.6s ease;
-  text-align: center;
-}
-
- .active, .dot:hover {
-  background-color:#007FFC; 
-}
-
-#go-to-gallery {
-    text-align:center;
-    color:#007FFC;
-    margin:8px auto;
-    font-size:18px;
-    font-weight:800;
-}
-
-#go-to-gallery a {
-    color:#007FFC;
-    text-decoration:underline;
-}
-
-}
-
-
-
-@media screen and (min-width:700px) {
-
-
-
-/* Hide the images by default */
-.mySlides  {
-    display:none;
-    height:600px;
+    min-height:100vh;
     width:100%; 
     transition:0.9s ease;
 }
 
-/* .mySlides img {
-    width:100%;
-    height:600px;
-  } */
-
 /* Next & previous buttons */
+.control-buttons {
+  width: 100%;
+}
  .prev, .next {
-  position:absolute;
-  top:30%;
+  position: absolute;
+  top:50%;
   width:auto;
   padding:16px; 
   color:purple;
-  font-weight:600;
-  font-size:18px;
+ font-weight: lighter;
+  font-size:27px;
   transition:0.6s ease;
   border-radius:0 3px 3px 0;
   user-select:none;
+  z-index: 10;;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 /* Position the "next button" to the right */
 .next {
   left:90%;
+  border-radius:3px 0 0 3px;
+}
+.prev {
+  right:90%;
   border-radius:3px 0 0 3px;
 }
 
@@ -155,10 +45,12 @@
 /* Caption text */
 .text {
   color:purple;
-  font-size:26px;
+  font-size:28px;
   font-weight:600;
+  letter-spacing: 4px;
   width:100%;
   text-align:center;
+  margin-bottom:25px;
 }
 
 /* Number text (1/6 etc) */
@@ -184,10 +76,11 @@
 
 #dots {
     width:100%;
-    position:relative;
+    position: absolute;;
     margin:0 auto;
-    bottom:10%;
+    top:95%;
     text-align:center;
+    display: none;
     }
     
 /* The dots/bullets/indicators */
@@ -205,5 +98,3 @@
  .active, .dot:hover {
   background-color:palevioletred;
 }
-
-/* } */

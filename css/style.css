@@ -1,8 +1,16 @@
 /* ============== UNISVERSAL STYLES =================== */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: url("../img/bg.png");
     width:100%;
-    margin:0;
+    height: 100vh;
+    min-height: 100vh;
+    overflow-x: hidden;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -14,14 +22,22 @@ a {
     text-decoration:none;
 }
 
+.body-container {
+    position: relative;
+}
+
 /*--------------------------------------------------------------
 # Contacts
 --------------------------------------------------------------*/
+form {
+    margin-left: 30px;
+}
+
 input, textarea {
     background-image:url("../img/bg.png");
     float:left;
     border:0;
-    color:slategray;
+    color:rgb(148, 148, 148);
     font-size:14px;
 }
 
@@ -53,8 +69,12 @@ button:hover {
     color:purple;
 }
 
+.inside-row {
+    margin:10px auto
+}
+
 .inside-row a {
-    color:slategray;
+    color:rgb(148, 148, 148);
     font-size:18px;
 }
 
@@ -70,12 +90,16 @@ button:hover {
     width:100%;
 }
 
+.inside-row p {
+    margin: 10px;
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 
 p, li {
-    color: slategrey;
+    color:rgb(148, 148, 148);
 }
 
 li {
@@ -89,56 +113,72 @@ li {
 --------------------------------------------------------------*/
 .slideshow-container {
     Border:0; 
-    width:90%;
-    height:600px;
-    margin:15px auto;
+    width:100%;
+    height:100vh;
+    min-height: 100vh;
+    margin: auto;
     transition:0.9s ease;
 }
 
 .mySlides h1 { 
-    font-size:40px;
+    font-size:30px;
     font-weight:700;
-    margin:30px auto;
+    letter-spacing: 4px;
+    line-height: 44px;
+    text-align: center;;
     padding-top:15px;
+    position: relative;
 }
 
 #welcome-mssg, .mySlides h1 {
     text-align:center;
-    margin:30px auto;
+    margin:auto;
     width:80%;
+    margin-top:10px;
+    margin-bottom:30px;
 }
 
 .mySlides .p {
-    float:left;
-    width:35%;
-    font-size:18px;
-    padding:8px;
-    left:0%;
+    width:80%;
+    font-size:20px;
+    text-align: center;
+    line-height:27px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .mySlides .p, .my-boxes, .my-boxes #p {
-    position: relative
+    position: relative;
 }
 
 .mySlides .large-box {
     width:80%;
     height:200px;
-    margin:15px auto;
+    margin:30px auto;
     margin-top:0;
 }
 
+.mySlides .large-box p {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    padding-left:5px;
+}
+
 .mySlides .large-box .logos {
-    width:22%;
+    width:15%;
     margin:8px;
-   
+    margin-left:25px;
 }
 
 .mySlides .large-box .square {
     background-color:purple;
     width:125px;
     height:120px;
-    margin:10px;
+    margin:18px;
     float:left;
+    margin-left: 18px;
+    box-sizing: border-box;
 }
 
 .square img, .my-boxes .my-box img {
@@ -150,14 +190,10 @@ li {
     border:2px solid #fff;
 }
 
-.my-boxes #p {
-    left:3%;
-}
-
 .my-boxes {
     width:100%;
     left:12%;
-}
+} 
 
 .mySlides .my-box {
     color:#fff;
@@ -165,7 +201,10 @@ li {
     float:left;
     text-align: center;
     height:180px;
-    margin:10px;
+    margin:12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .mySlides .my-box img {
@@ -270,13 +309,10 @@ footer {
     width:100%;
     height:30px;
     color:#fff;
-    float:left;
-    margin-top:20px;
-    margin-bottom:50px;
     /* background-color:purple; */
-    padding-top:6px;
-    padding-bottom:20px;
     text-align:center;
+    padding-bottom: 20px;
+    appearance:footer;
 }
 
 footer p, footer a {
@@ -301,16 +337,18 @@ footer p, footer a {
         }
         .mySlides .large-box .square {
             width:40%;
-            float:left;
-            margin:10px;
-            margin-top:5px;
-            margin-bottom:5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin:15px;
+            margin-top:35px;
+            margin-bottom:25px;
         }
 
         .social-links {
-            padding-bottom:30px;
-            padding-left:10px;
-            text-align:center;
+            width: 100%;
+            margin: 30px;
+            float:none;
         }
 
         .numbertext {
@@ -342,17 +380,24 @@ footer p, footer a {
         }
 
         .mySlides .large-box .logos {
-            width:40%;
-            margin:4px;
-           
+            width:42%;
+            margin:4px auto;
+            margin-left: 20px;
+        }
+
+        .control-buttons {
+            position: fixed;
+            top:50%
         }
 
         .prev, .next {
-            top:4%;
+            top:10%;
         }
-
-        #dots {
-            bottom:0;
+        .prev {
+            left: 0;
+        }
+        .next {
+            right: 0;
         }
 
         input, textarea {
@@ -363,8 +408,15 @@ footer p, footer a {
             float:left;
         }
 
+        .clear {
+            clear: both;
+        }
+
         footer {
-            margin-top:100px;
+            position: relative;
+            bottom:100%;
+            margin-top:50px;
+            display: inline-block;
         }
 }
 /* ============== END OF SMALL DEVICES =================== */
